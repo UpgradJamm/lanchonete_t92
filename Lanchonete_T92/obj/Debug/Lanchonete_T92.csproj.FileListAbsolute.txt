@@ -1,0 +1,10 @@
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\bin\Debug\Lanchonete_T92.exe.config
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\bin\Debug\Lanchonete_T92.exe
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\bin\Debug\Lanchonete_T92.pdb
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.csproj.AssemblyReference.cache
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.Properties.Resources.resources
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.csproj.GenerateResource.cache
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.exe
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.pdb
+C:\Users\guilherme.acreis\source\repos\Lanchonete_T92\Lanchonete_T92\obj\Debug\Lanchonete_T92.Form1.resources
