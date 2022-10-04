@@ -15,6 +15,13 @@ namespace Lanchonete_T92
         public Form1()
         {
             InitializeComponent();
+
+            // Chamando o método que está no Model desta tela
+            // Instanciar a classe como um objeto utilizavel
+            LayoutModel login = new LayoutModel();
+
+
+            login.MontaLogin( this );
         }
     }
 }
