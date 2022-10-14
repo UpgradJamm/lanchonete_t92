@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("Lanchonete_T92")]
+[assembly: AssemblyTitle("Lanchonete T92")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Lanchonete_T92")]
+[assembly: AssemblyProduct("Lanchonete T92")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // O GUID a seguir será destinado à ID de typelib se este projeto for exposto para COM
-[assembly: Guid("fdd59c55-4b0f-406d-a916-e062d3639da9")]
+[assembly: Guid("5705d954-46f7-4629-8fcd-508b74e18076")]
 
 // As informações da versão de um assembly consistem nos quatro valores a seguir:
 //
