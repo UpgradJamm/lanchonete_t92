@@ -18,16 +18,14 @@ namespace Lanchonete_T92
             // Construtor da tela, excutado automaticamente ANTES da tela carregar, enquanto está sendo montada.
 
             // escreve o texto no Console (saida)
-            Debug.WriteLine("A tela foi montada.");
+            //Debug.WriteLine("A tela foi montada.");
 
-            InitializeComponent();
+            InitializeComponent();// inicializa os componentes da tela
 
             // chamamos a função/método da classe LoginController.cs
             // Instanciar um objeto da classe
             LoginController loginC = new LoginController( this );
-
-            
-
+           
         }
 
 

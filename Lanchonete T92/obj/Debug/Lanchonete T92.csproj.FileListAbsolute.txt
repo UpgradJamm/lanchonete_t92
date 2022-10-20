@@ -11,19 +11,6 @@ C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lan
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login.png
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo.png
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe.config
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.pdb
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.Properties.Resources.resources
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.LoginView.resources
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.GenerateResource.cache
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\Desktop\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login.png
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo.png

@@ -1,9 +1,21 @@
 ﻿/*
     Classe que aplica as alterações, chamadas e controles da tela de Login (LoginView.cs)
+    
+    Propriedades / Atributos / Variáveis / Parâmetros
+        - Propriedade/Atributo - está dentro da classe
+        - Variável dentro do método/função
+        - Parâmetro dentro do parêntese do método
+
+    *.Width / *.Height - dimensões do elemento
+   
+    Convert. - Método de conversão de tipo de dados da classe System
+            ToInt32() - converte para inteiros
+            ToFloat() - converte para decimal float
+            ToBool() - converte para lógico
+    
 */
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
@@ -13,65 +25,31 @@ namespace Lanchonete_T92
 {
     public class LoginController
     {
-        // Atributos 
         private Form form;
-        private int temaAtual = 1;
-        
+       
         // Método Construtor - é executado automaticamente ao criar um objeto da classe
         public LoginController( Form form )
         {
-            //.WriteLine(" O objeto foi criado e o construtor disparado!");
+            // envia o form para o atributo da classe
+            this.form = form;
 
-
-            this.form = form;// Enviando a form para a classe
-
-            ConfiguraLoginView();
-
-            MudaCores();
+            TamanhoTela();
         }
 
-        /// <summary>
-        /// Configura o tamanho e cor da tela de login
-        /// </summary>
-        private void ConfiguraLoginView()
+        private void TamanhoTela()
         {
-            
-            // Mudando a cor da tela LoginView
-            form.BackColor = Color.FromArgb(Config.coresFundo[temaAtual, 0], Config.coresFundo[temaAtual, 1], Config.coresFundo[temaAtual, 2]);
+            // form.Width lê o tamaho da tela
+            // form.Width = 100 definindo a largura da tela
+            form.Width = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f);
+            form.Height = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f * 0.56f);
 
-            // Mudando as dimensões da tela de acordo com o monitor
-            int LarguraTela = Convert.ToInt32 (Config.tamanhoMonitor[0] * 0.6f);
-            int alturaTela = Convert.ToInt32(Config.tamanhoMonitor[1] * 0.56f);
+            // Tamanho da imagem lateral
+            int largLateral = Convert.ToInt32( form.Width * 0.35f );
+            int altLateral = Convert.ToInt32( largLateral * 1.53f );
 
+            form.Controls.Find("imagemLateral",true)[0].Size = new Size( largLateral, altLateral );
 
-            form.Size = new Size(LarguraTela,
-                alturaTela);
-
-            // Devolvendo ao centro da tela
-            form.StartPosition = FormStartPosition.CenterScreen;
         }
-        private void MudaCores()
-        {
-            // Criamos um vetor de objetos para guardar os componentes
-            // Vetores podem se adicionados, removidos, reoordenados
-            List<Control> componentes = new List<Control>();
-            // Lopp que se repete para cada componente encontrado
-            // O objeto controles só existe dentro do laço de repetição foreach
-            foreach ( Control controles in form.Controls)
-            {
-                if( controles is Label)
-                {
-                    //componentes.Add(controles);
-                    // Criamos um botão (objeto);
-                    Label rotulo = new Label();
-                    // Controles é Control / btn Button 
-                    rotulo = (Label) controles;
-                    rotulo.ForeColor = Color.Red;
-                }
-                
-            }
-            // MessageBox abre uma caixa de mensagem para o usuário
-            MessageBox.Show("Foram encontrados " + componentes.Count + " item");
-        }
+
     }
 }
