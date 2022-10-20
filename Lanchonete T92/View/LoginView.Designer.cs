@@ -38,11 +38,11 @@ namespace Lanchonete_T92
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.voltarBtn = new System.Windows.Forms.Button();
             this.entrarBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.senhaTxt = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.voltarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagemLateral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -152,6 +152,26 @@ namespace Lanchonete_T92
             this.panel2.TabIndex = 3;
             this.panel2.Visible = false;
             // 
+            // voltarBtn
+            // 
+            this.voltarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.voltarBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.voltarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("voltarBtn.BackgroundImage")));
+            this.voltarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.voltarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voltarBtn.FlatAppearance.BorderSize = 0;
+            this.voltarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.voltarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.voltarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.voltarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarBtn.ForeColor = System.Drawing.Color.White;
+            this.voltarBtn.Location = new System.Drawing.Point(91, 139);
+            this.voltarBtn.Name = "voltarBtn";
+            this.voltarBtn.Size = new System.Drawing.Size(130, 60);
+            this.voltarBtn.TabIndex = 2;
+            this.voltarBtn.Text = "Voltar";
+            this.voltarBtn.UseVisualStyleBackColor = false;
+            // 
             // entrarBtn
             // 
             this.entrarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -206,36 +226,16 @@ namespace Lanchonete_T92
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // voltarBtn
-            // 
-            this.voltarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.voltarBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.voltarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("voltarBtn.BackgroundImage")));
-            this.voltarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.voltarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.voltarBtn.FlatAppearance.BorderSize = 0;
-            this.voltarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.voltarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.voltarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.voltarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voltarBtn.ForeColor = System.Drawing.Color.White;
-            this.voltarBtn.Location = new System.Drawing.Point(91, 139);
-            this.voltarBtn.Name = "voltarBtn";
-            this.voltarBtn.Size = new System.Drawing.Size(130, 60);
-            this.voltarBtn.TabIndex = 2;
-            this.voltarBtn.Text = "Voltar";
-            this.voltarBtn.UseVisualStyleBackColor = false;
-            // 
             // LoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.logoImg);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.imagemLateral);
-            this.Controls.Add(this.logoImg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
