@@ -24,6 +24,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 
@@ -32,22 +33,37 @@ namespace Lanchonete_T92
     public class LoginController
     {
         private Form form;
-       
+        private int qtdadeItens; 
+
         // Método Construtor - é executado automaticamente ao criar um objeto da classe
         public LoginController( Form form )
         {
             // envia o form para o atributo da classe
             this.form = form;
-
+            
+            // Tem a função de conta quantos elementos tem na tela.
+            //ContaItens();
+            
+            // Chama o método que redimensiona a tela.
             TamanhoTela();
+
+            // Chamando o método FormataControles passando seu parâmetro
+            FormataControles( form.Controls);
+
+            AplicaImagens();
+            
+            // Chamando um método e um atributo de uma classe estática
+            //Config.MostraMensagem( Config.caminho );
+
+            
         }
 
         private void TamanhoTela()
         {
             // form.Width lê o tamaho da tela
             // form.Width = 100 definindo a largura da tela
-            //form.Width = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f);
-            //form.Height = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f * 0.56f);
+            form.Width = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f);
+            form.Height = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f * 0.56f);
 
             // Tamanho da imagem lateral
             MudaTamanhos( PegaComponente("imagemLateral"),0.35f, 1.53f);
@@ -96,25 +112,95 @@ namespace Lanchonete_T92
 
         }
     
-        Control PegaComponente( string quem)
+        Control PegaComponente( string quem )
         {
             return form.Controls.Find(quem, true)[0];
         }
         /// <summary>
         /// Remove cor de fundo e padroniza todos os componentes da tela
         /// </summary>
-        void FormatacaoGeral()
+        /// <param name="colecao">parâmetro com a coleção de controles do form a ser acessada. </param>
+
+        void FormataControles( Control.ControlCollection colecao )
+            {
+                
+                List<Control> itens = new List<Control>() ;
+
+                // Laço de repetição (loop) - se repete para cada item encontrado
+                foreach( Control componetes in colecao )
+                {
+                
+                    if (componetes is Button)
+                    {
+                        Button btn = new Button();
+                        btn = (Button) componetes;
+                        // Nesse escopo componentes tem apenas botões
+                        btn.BackColor = Color.Transparent;
+                        btn.FlatStyle = FlatStyle.Flat;
+                        btn.FlatAppearance.BorderSize = 0;
+                        btn.FlatAppearance.MouseDownBackColor = Color.Transparent;
+                        btn.FlatAppearance.MouseOverBackColor = Color.Transparent;
+                        btn.ForeColor = Color.White;
+                        btn.Text = "";
+                        btn.Cursor = Cursors.Hand;
+                    btn.BackgroundImageLayout = ImageLayout.Zoom;
+                    }
+
+                    if (componetes is TextBox)
+                    {
+                        TextBox texto = new TextBox();
+                        texto = (TextBox)componetes;
+
+                    }
+                
+                    if (componetes is Panel)
+                    {
+                        Panel painel = new Panel();
+                        painel = (Panel)componetes;
+                        painel.BackColor = Color.Transparent;
+                    }
+
+                    if (componetes is Label)
+                    {
+                        Label rotulo = new Label();
+                        rotulo = (Label)componetes;
+                        rotulo.BackColor = Color.Transparent;
+                        
+                    }
+                
+                // Repetir o método que conta os itens, mas agora dentro dos controles
+                FormataControles( componetes.Controls );
+                
+                
+                }
+                this.qtdadeItens = itens.Count;
+
+                // Envia o resultado para uma propriedade/atributo da classe
+            
+
+                //MessageBox.Show("Achei " + qtdadeItens + " componentes.");
+        }
+        void ContaItens()
         {
+            List<Control> lista = new List<Control>();
+           
             // Para cada item encontrado repita o código abaixo:
+            // Itens que estão diretamente no form (filhos do form)
             foreach (Control itens in form.Controls)
             {
-                if ( itens is PictureBox)
-                {
-
-                PictureBox imagem = (PictureBox) itens;
-                    MessageBox.Show("Foram encontrados " + imagem.Name + "itens");
-            }
+                // Para cada item encontrado repita o código abaixo:
+                lista.Add(itens);
         }
+            // Exibe uma caixa de aviso para o usuário.
+            MessageBox.Show("Foram encontrados " + lista.Count + " itens");
+        }
+        void AplicaImagens()
+        {
+            PegaComponente("ImagemLateral").BackgroundImage = Image.FromFile(Path.Combine(Config.caminho, "Imagens\\login.png"));
+
+            PegaComponente("logoImg").BackgroundImage = Image.FromFile(Path.Combine(Config.caminho, "Imagens\\logo.png"));
+
+            PegaComponente("fecharBtn").BackgroundImage = Image.FromFile(Path.Combine(Config.caminho, "Imagens\\icones\\botao-ligar-desligar.png"));
         }
     }
 }

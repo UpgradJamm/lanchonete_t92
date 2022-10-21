@@ -24,3 +24,12 @@ C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\L
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.exe
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\aumentar.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar_d.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\caracteristicas.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\compras-online.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\estoque-pronto.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\imagem-do-usuario-com-fundo-preto.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\minimizar.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair.png

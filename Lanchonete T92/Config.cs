@@ -5,7 +5,8 @@
             - private é visível apenas na classe (arquivo)
             - public é visível de qualquer outra classe
             
-        - Abstração
+        - Abstração - ao chamar um método não é necessário conhecer seus detalhes, 
+            apenas passar os parâmetros que são obrigatorios.
         - Herança
         - Polimorfismo
 
@@ -23,11 +24,13 @@
 
 */
 //Importando a classe Forms do Win (componentes)
+using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace Lanchonete_T92
 {
-   
+
     public static class Config
     {
         // Atributos - varáveis da classe é visível de qualquer membro da classe
@@ -38,6 +41,14 @@ namespace Lanchonete_T92
         // ler o tamanho do monitor do usuário
         public static int[] tamanhoTela = { Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height };
 
+        // Essa variável armazena o caminho da nossa instalação 
+        public static string caminho = Path.GetDirectoryName
+            (Assembly.GetExecutingAssembly().Location);
+
+        public static void MostraMensagem( string texto)
+        {
+            MessageBox.Show(texto);
+        }
     }
 
 }

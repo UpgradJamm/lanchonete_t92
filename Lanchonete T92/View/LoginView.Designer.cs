@@ -43,6 +43,7 @@ namespace Lanchonete_T92
             this.label1 = new System.Windows.Forms.Label();
             this.senhaTxt = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.fecharBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagemLateral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +56,6 @@ namespace Lanchonete_T92
             // 
             this.continuarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.continuarBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.continuarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("continuarBtn.BackgroundImage")));
             this.continuarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.continuarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.continuarBtn.FlatAppearance.BorderSize = 0;
@@ -74,7 +74,6 @@ namespace Lanchonete_T92
             // logoImg
             // 
             this.logoImg.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.logoImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoImg.BackgroundImage")));
             this.logoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoImg.Location = new System.Drawing.Point(460, 30);
             this.logoImg.Name = "logoImg";
@@ -84,12 +83,11 @@ namespace Lanchonete_T92
             // 
             // imagemLateral
             // 
-            this.imagemLateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imagemLateral.BackgroundImage")));
             this.imagemLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imagemLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.imagemLateral.Location = new System.Drawing.Point(0, 0);
             this.imagemLateral.Name = "imagemLateral";
-            this.imagemLateral.Size = new System.Drawing.Size(300, 450);
+            this.imagemLateral.Size = new System.Drawing.Size(250, 450);
             this.imagemLateral.TabIndex = 2;
             this.imagemLateral.TabStop = false;
             // 
@@ -97,7 +95,7 @@ namespace Lanchonete_T92
             // 
             this.usuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usuarioLabel.AutoSize = true;
-            this.usuarioLabel.Location = new System.Drawing.Point(112, 50);
+            this.usuarioLabel.Location = new System.Drawing.Point(109, 50);
             this.usuarioLabel.Name = "usuarioLabel";
             this.usuarioLabel.Size = new System.Drawing.Size(118, 13);
             this.usuarioLabel.TabIndex = 3;
@@ -109,7 +107,7 @@ namespace Lanchonete_T92
             this.usuarioTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(229)))), ((int)(((byte)(210)))));
             this.usuarioTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarioTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuarioTxt.Location = new System.Drawing.Point(116, 82);
+            this.usuarioTxt.Location = new System.Drawing.Point(116, 91);
             this.usuarioTxt.MaxLength = 255;
             this.usuarioTxt.Name = "usuarioTxt";
             this.usuarioTxt.Size = new System.Drawing.Size(230, 17);
@@ -120,7 +118,7 @@ namespace Lanchonete_T92
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(94, 74);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(274, 51);
             this.pictureBox1.TabIndex = 4;
@@ -156,7 +154,6 @@ namespace Lanchonete_T92
             // 
             this.voltarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.voltarBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.voltarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("voltarBtn.BackgroundImage")));
             this.voltarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.voltarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.voltarBtn.FlatAppearance.BorderSize = 0;
@@ -176,7 +173,6 @@ namespace Lanchonete_T92
             // 
             this.entrarBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.entrarBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.entrarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entrarBtn.BackgroundImage")));
             this.entrarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.entrarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.entrarBtn.FlatAppearance.BorderSize = 0;
@@ -226,12 +222,22 @@ namespace Lanchonete_T92
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // fecharBtn
+            // 
+            this.fecharBtn.Location = new System.Drawing.Point(256, 375);
+            this.fecharBtn.Name = "fecharBtn";
+            this.fecharBtn.Size = new System.Drawing.Size(75, 23);
+            this.fecharBtn.TabIndex = 4;
+            this.fecharBtn.Text = "button1";
+            this.fecharBtn.UseVisualStyleBackColor = true;
+            // 
             // LoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.fecharBtn);
             this.Controls.Add(this.logoImg);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -266,5 +272,6 @@ namespace Lanchonete_T92
         private System.Windows.Forms.TextBox senhaTxt;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button voltarBtn;
+        private System.Windows.Forms.Button fecharBtn;
     }
 }
