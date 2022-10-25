@@ -33,3 +33,4 @@ C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\I
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\imagem-do-usuario-com-fundo-preto.png
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\minimizar.png
 C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair.png
+C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.PrincipalView.resources

@@ -49,6 +49,11 @@ namespace Lanchonete_T92
         {
             MessageBox.Show(texto);
         }
+        public static Control PegaComponentes(string quem, Form form)
+        {
+            return form.Controls.Find(quem , true)[0];
+        }
+
     }
 
 }

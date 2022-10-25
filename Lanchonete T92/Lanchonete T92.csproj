@@ -49,6 +49,13 @@
     <Compile Include="Config.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Model\UsuariosModel.cs" />
+    <Compile Include="Controller\PrincipalController.cs" />
+    <Compile Include="View\PrincipalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrincipalView.Designer.cs">
+      <DependentUpon>PrincipalView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,9 +73,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrincipalView.resx">
+      <DependentUpon>PrincipalView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Manrope-Light.ttf" />
     <None Include="Fonts\RobotoFlex-Regular.ttf" />
@@ -126,6 +137,10 @@
     <Content Include="Imagens\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\menu_b.png" />
+    <None Include="Resources\botao-ligar-desligar.png" />
+    <None Include="Resources\logo copiar2.png" />
+    <None Include="Resources\login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
