@@ -16,16 +16,8 @@ namespace Lanchonete_T92
         {
             InitializeComponent();
 
-            PrincipalController principalController = new PrincipalController(this);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void PrincipalView_Load(object sender, EventArgs e)
-        {
+            // Instanciar um objeto da classe
+            PrincipalController principalC = new PrincipalController( this );
 
         }
     }

@@ -73,9 +73,14 @@ namespace Lanchonete_T92
             // 
             // logoImg
             // 
+<<<<<<< Updated upstream
             this.logoImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.logoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoImg.Location = new System.Drawing.Point(460, 30);
+=======
+            this.logoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoImg.Location = new System.Drawing.Point(306, 30);
+>>>>>>> Stashed changes
             this.logoImg.Name = "logoImg";
             this.logoImg.Size = new System.Drawing.Size(200, 200);
             this.logoImg.TabIndex = 1;
@@ -87,7 +92,11 @@ namespace Lanchonete_T92
             this.imagemLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.imagemLateral.Location = new System.Drawing.Point(0, 0);
             this.imagemLateral.Name = "imagemLateral";
+<<<<<<< Updated upstream
             this.imagemLateral.Size = new System.Drawing.Size(250, 450);
+=======
+            this.imagemLateral.Size = new System.Drawing.Size(251, 450);
+>>>>>>> Stashed changes
             this.imagemLateral.TabIndex = 2;
             this.imagemLateral.TabStop = false;
             // 
@@ -95,7 +104,11 @@ namespace Lanchonete_T92
             // 
             this.usuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usuarioLabel.AutoSize = true;
+<<<<<<< Updated upstream
             this.usuarioLabel.Location = new System.Drawing.Point(109, 50);
+=======
+            this.usuarioLabel.Location = new System.Drawing.Point(112, 50);
+>>>>>>> Stashed changes
             this.usuarioLabel.Name = "usuarioLabel";
             this.usuarioLabel.Size = new System.Drawing.Size(118, 13);
             this.usuarioLabel.TabIndex = 3;
@@ -107,7 +120,11 @@ namespace Lanchonete_T92
             this.usuarioTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(229)))), ((int)(((byte)(210)))));
             this.usuarioTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarioTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< Updated upstream
             this.usuarioTxt.Location = new System.Drawing.Point(116, 91);
+=======
+            this.usuarioTxt.Location = new System.Drawing.Point(116, 82);
+>>>>>>> Stashed changes
             this.usuarioTxt.MaxLength = 255;
             this.usuarioTxt.Name = "usuarioTxt";
             this.usuarioTxt.Size = new System.Drawing.Size(230, 17);
@@ -118,7 +135,11 @@ namespace Lanchonete_T92
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+<<<<<<< Updated upstream
             this.pictureBox1.Location = new System.Drawing.Point(94, 74);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(94, 65);
+>>>>>>> Stashed changes
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(274, 51);
             this.pictureBox1.TabIndex = 4;
@@ -224,7 +245,11 @@ namespace Lanchonete_T92
             // 
             // fecharBtn
             // 
+<<<<<<< Updated upstream
             this.fecharBtn.Location = new System.Drawing.Point(256, 375);
+=======
+            this.fecharBtn.Location = new System.Drawing.Point(276, 359);
+>>>>>>> Stashed changes
             this.fecharBtn.Name = "fecharBtn";
             this.fecharBtn.Size = new System.Drawing.Size(75, 23);
             this.fecharBtn.TabIndex = 4;
@@ -238,9 +263,15 @@ namespace Lanchonete_T92
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.Controls.Add(this.fecharBtn);
+<<<<<<< Updated upstream
             this.Controls.Add(this.logoImg);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+=======
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.logoImg);
+>>>>>>> Stashed changes
             this.Controls.Add(this.imagemLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginView";
