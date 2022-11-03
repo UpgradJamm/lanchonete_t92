@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-<<<<<<< Updated upstream
-=======
 using System.IO;
->>>>>>> Stashed changes
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,59 +10,6 @@ using System.Windows.Forms;
 
 namespace Lanchonete_T92
 {
-<<<<<<< Updated upstream
-    class PrincipalController 
-    {
-        private Form form;
-        public PrincipalController(Form form)
-        {
-            
-            this.form = form;
-            TamanhoTela();
-
-
-        }
-        private void TamanhoTela()
-        {
-           
-            form.Width = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f);
-            form.Height = Convert.ToInt32(Config.tamanhoTela[0] * 0.6f * 0.56f);
-
-            MudaTamanhos(PegaComponente("imagemLateral"), 0.30f, 1.53f);
-
-            MudaTamanhos(PegaComponente("logoImg"), 0.55f, 0.55f);
-            MudaPosicao(PegaComponente("logoImg"), 0.4f, 0.05f);
-
-            MudaTamanhos(PegaComponente("panel1"), 0.6f, 0.5f);
-
-        }
-        void MudaTamanhos(Control componente, float fatorLarg, float fatorAlt)
-        {
-            int larguraNova = Convert.ToInt32(componente.Parent.Width * fatorLarg);
-            int AlturaNova = Convert.ToInt32(larguraNova * fatorAlt);
-
-            
-            componente.Size = new Size(larguraNova, AlturaNova);
-
-            Debug.WriteLine(componente.Parent.Width);
-
-            
-            Debug.WriteLine(componente.Parent.Width);
-        }
-        void MudaPosicao(Control componente, float x, float y)
-        {
-            int posX = Convert.ToInt32(componente.Parent.Width * x);
-            int posY = Convert.ToInt32(componente.Parent.Width * y);
-
-
-            componente.Location = new Point(posX, posY);
-
-        }
-        Control PegaComponente(string quem)
-        {
-            return form.Controls.Find(quem, true)[0];
-        }
-=======
     class PrincipalController
     {
         private Form form;
@@ -77,9 +21,20 @@ namespace Lanchonete_T92
             this.form = form;
 
             FormataTela();
+            CriaBotoes();
             CriaPainelLateral();
             CriaLogo();
-            CriarBotoes();
+
+            // Listeners (ouvintes) dos botões da tela
+            // O objeto deve ter um .Name para poder ser programado
+            // .Click - clique sobre o elemento 
+            // .MouseHover - mouse sobre o elemento
+            // .MouseLeave - mouse sair de cima do elemento
+            // .MouseMove - quando o mouse se movimenta sobre o elemento
+            // .DoubleClick - clique duplo sobre o elemento
+            // .MouseDown - mouse pressionado sobre o elemento
+
+            form.Controls.Find("sairBtn", true)[0].Click += FazerLogOFF;
         }
 
         void FormataTela()
@@ -112,48 +67,78 @@ namespace Lanchonete_T92
             form.Controls.Add( imagemLateral );
 
         }
-        private void CriaLogo()
+
+        void CriaLogo()
         {
-            int LargLogo = Convert.ToInt32(Config.tamanhoTela[0] * 0.2f);
+            int largLogo = Convert.ToInt32( Config.tamanhoTela[0] * 0.2f );
 
-            int elementos = largImagem + LargLogo;
+            //int elementos = largImagem + largLogo;
 
-            int posX = Convert.ToInt32( (Config.tamanhoTela[0] * 0.7f - LargLogo) );
-            int posY = Convert.ToInt32( (Config.tamanhoTela[1] / 2) - (LargLogo / 2 ));
+            int posX = Convert.ToInt32( Config.tamanhoTela[0] * 0.7f - largLogo );
+            int posY = Convert.ToInt32( ( Config.tamanhoTela[1] / 2) - ( largLogo / 2 ));
 
-            Debug.WriteLine(elementos);
+            //Debug.WriteLine( elementos );
 
-            PictureBox ImagemLogo = new PictureBox();
+            PictureBox logo = new PictureBox();
+            logo.Size = new Size( largLogo, largLogo );
+            logo.BackgroundImage = Image.FromFile( Config.CaminhosImagens("logo") );
+            logo.BackgroundImageLayout = ImageLayout.Zoom;
+            logo.Location = new Point( posX, posY );
 
-            
-            ImagemLogo.Size = new Size(LargLogo, LargLogo);
-            ImagemLogo.BackgroundImage = Image.FromFile(Config.CaminhosImagens("logo"));
-            ImagemLogo.BackgroundImageLayout = ImageLayout.Zoom;
-            ImagemLogo.Location = new Point(posX, posY);
+            form.Controls.Add(logo);
 
-            ImagemLogo.BackColor = Color.Transparent;
-            
-            form.Controls.Add( ImagemLogo );
         }
-        void CriarBotoes()
+
+        void CriaBotoes()
         {
-            int tamanhoBtn = Convert.ToInt32( Config.tamanhoTela[0] * 0.02f );
-            int posX = Convert.ToInt32(Config.tamanhoTela[0] * 0.95f );
-            int posX2 = Convert.ToInt32(Config.tamanhoTela[0] * 0.97f );
             
+            int posX = Convert.ToInt32( Config.tamanhoTela[0] * 0.97f );
+            int posX2 = Convert.ToInt32( Config.tamanhoTela[0] * 0.94f );
+
             Button configBtn = new Button();
-            configBtn.Size = new Size(tamanhoBtn, tamanhoBtn);
-            configBtn.Location = new Point(posX2, 10);
+            PadronizaBotoes(configBtn);
+            configBtn.Location = new Point( posX2 , 10 );
             configBtn.BackgroundImage = Image.FromFile(Config.CaminhosImagens("config"));
+            configBtn.Name = "configBtn"; // Aplica um Name ao objeto
             form.Controls.Add(configBtn);
 
             Button sairBtn = new Button();
-            sairBtn.Size = new Size(tamanhoBtn, tamanhoBtn);
+            PadronizaBotoes(sairBtn);
             sairBtn.Location = new Point(posX, 10);
-            sairBtn.BackgroundImage = Image.FromFile(Config.CaminhosImagens("sair"));
+            sairBtn.BackgroundImage = Image.FromFile( Config.CaminhosImagens( "sair" ));
+            configBtn.Name = "sairBtn";
             form.Controls.Add(sairBtn);
+
+            Button menuBtn = new Button();
+            PadronizaBotoes(menuBtn);
+            menuBtn.Location = new Point(10, 10);
+            menuBtn.BackgroundImage = Image.FromFile(Config.CaminhosImagens("menu"));
+            configBtn.Name = "menuBtn";
+            form.Controls.Add(menuBtn);
+        }
+        void PadronizaBotoes( Button botao )
+        {
+            int tamanhoBtn = Convert.ToInt32(Config.tamanhoTela[0] * 0.02f);
+
+            botao.Size = new Size(tamanhoBtn, tamanhoBtn);
+            botao.BackgroundImageLayout = ImageLayout.Zoom;
+            botao.FlatAppearance.BorderSize = 0;
+            botao.FlatStyle = FlatStyle.Flat;
+            botao.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            botao.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            botao.BackColor = Color.Transparent;
+            botao.Cursor = Cursors.Hand;
+
+        }
+        void FazerLogOFF(object disparador, EventArgs evento )
+        {
+            // Abrimos a tela de login 
+            LoginView LoginV = new LoginView(); // Criando o objeto da tela de Login
+            LoginV.Show();// Exibe a tela criada
+            
+            //form.Close();// encerra a tela e ser for a única aberta encerra a aplicação.
+
         }
 
->>>>>>> Stashed changes
     }
 }

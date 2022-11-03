@@ -17,11 +17,8 @@ namespace Lanchonete_T92
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< Updated upstream:Lanchonete T92/Program.cs
-=======
             
             // Tela que inicia a aplicação
->>>>>>> Stashed changes:Lanchonete_T92/Program.cs
             Application.Run(new PrincipalView());
         }
     }

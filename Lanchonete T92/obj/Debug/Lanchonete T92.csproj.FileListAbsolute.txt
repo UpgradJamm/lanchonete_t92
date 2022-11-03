@@ -11,31 +11,6 @@ C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lan
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
-<<<<<<< Updated upstream
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe.config
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.pdb
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.Properties.Resources.resources
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.LoginView.resources
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.GenerateResource.cache
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\aumentar.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar_d.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\caracteristicas.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\compras-online.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\estoque-pronto.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\imagem-do-usuario-com-fundo-preto.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\minimizar.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair.png
-C:\Users\guilherme.acreis\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.PrincipalView.resources
-=======
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\aumentar.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar_d.png
@@ -51,34 +26,9 @@ C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Ima
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\menu_d.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login_d.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.Properties.Resources.resources
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.LoginView.resources
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.PrincipalView.resources
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.GenerateResource.cache
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_form.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundo_form_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\aumentar.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\caracteristicas.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\compras-online.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\estoque-pronto.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\imagem-do-usuario-com-fundo-preto.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\menu_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\minimizar.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\login_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\logo_d.png
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe.config
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.exe
-C:\Users\guilherme.acreis\Documents\GitHub\lanchonete_t92\Lanchonete T92\bin\Debug\Lanchonete T92.pdb
+C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\config.png
+C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\config_d.png
+C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form_d.png
@@ -87,11 +37,15 @@ C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\b
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\botao-ligar-desligar_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\caracteristicas.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\compras-online.png
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\config.png
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\config_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\estoque-pronto.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\imagem-do-usuario-com-fundo-preto.png
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\menu.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\menu_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\minimizar.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\sair.png
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\Icones\sair_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\login.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\login_d.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\logo.png
@@ -107,4 +61,3 @@ C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.c
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.exe
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
->>>>>>> Stashed changes
