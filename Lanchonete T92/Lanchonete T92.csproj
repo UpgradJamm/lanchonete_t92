@@ -89,6 +89,13 @@
     <Compile Include="Model\DB.cs" />
     <Compile Include="Model\UsuariosModel.cs" />
     <Compile Include="Controller\PrincipalController.cs" />
+    <Compile Include="Controller\UsuariosController.cs" />
+    <Compile Include="View\UsuariosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UsuariosView.Designer.cs">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\PrincipalView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\PrincipalView.resx">
       <DependentUpon>PrincipalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsuariosView.resx">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Manrope-Light.ttf" />
     <None Include="Fonts\RobotoFlex-Regular.ttf" />

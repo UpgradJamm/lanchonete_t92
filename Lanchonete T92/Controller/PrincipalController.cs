@@ -15,6 +15,7 @@ namespace Lanchonete_T92
         private Form form;
         private int largImagem;
 
+        
         // Construtor da classe que recebe a tela a ser editada e envia para a propriedade da tela
         public PrincipalController( Form form )
         {
@@ -22,19 +23,21 @@ namespace Lanchonete_T92
 
             FormataTela();
             CriaBotoes();
+            CriaTela();
             CriaPainelLateral();
             CriaLogo();
 
             // Listeners (ouvintes) dos botões da tela
             // O objeto deve ter um .Name para poder ser programado
-            // .Click - clique sobre o elemento 
+            // .Click - clique sobre o elemento
             // .MouseHover - mouse sobre o elemento
             // .MouseLeave - mouse sair de cima do elemento
             // .MouseMove - quando o mouse se movimenta sobre o elemento
             // .DoubleClick - clique duplo sobre o elemento
             // .MouseDown - mouse pressionado sobre o elemento
+            form.Controls.Find("sairBtn", true)[0].Click += FazerLogOff;
+            form.Controls.Find("menuBtn", true)[0].Click += CarregaTelas;
 
-            form.Controls.Find("sairBtn", true)[0].Click += FazerLogOFF;
         }
 
         void FormataTela()
@@ -91,7 +94,6 @@ namespace Lanchonete_T92
 
         void CriaBotoes()
         {
-            
             int posX = Convert.ToInt32( Config.tamanhoTela[0] * 0.97f );
             int posX2 = Convert.ToInt32( Config.tamanhoTela[0] * 0.94f );
 
@@ -99,23 +101,24 @@ namespace Lanchonete_T92
             PadronizaBotoes(configBtn);
             configBtn.Location = new Point( posX2 , 10 );
             configBtn.BackgroundImage = Image.FromFile(Config.CaminhosImagens("config"));
-            configBtn.Name = "configBtn"; // Aplica um Name ao objeto
+            configBtn.Name = "configBtn"; // aplica um Name ao objeto
             form.Controls.Add(configBtn);
 
             Button sairBtn = new Button();
             PadronizaBotoes(sairBtn);
             sairBtn.Location = new Point(posX, 10);
             sairBtn.BackgroundImage = Image.FromFile( Config.CaminhosImagens( "sair" ));
-            configBtn.Name = "sairBtn";
+            sairBtn.Name = "sairBtn";
             form.Controls.Add(sairBtn);
 
             Button menuBtn = new Button();
             PadronizaBotoes(menuBtn);
-            menuBtn.Location = new Point(10, 10);
+            menuBtn.Location = new Point( 10, 10);
             menuBtn.BackgroundImage = Image.FromFile(Config.CaminhosImagens("menu"));
-            configBtn.Name = "menuBtn";
+            menuBtn.Name = "menuBtn";
             form.Controls.Add(menuBtn);
         }
+
         void PadronizaBotoes( Button botao )
         {
             int tamanhoBtn = Convert.ToInt32(Config.tamanhoTela[0] * 0.02f);
@@ -128,16 +131,55 @@ namespace Lanchonete_T92
             botao.FlatAppearance.MouseOverBackColor = Color.Transparent;
             botao.BackColor = Color.Transparent;
             botao.Cursor = Cursors.Hand;
-
         }
-        void FazerLogOFF(object disparador, EventArgs evento )
-        {
-            // Abrimos a tela de login 
-            LoginView LoginV = new LoginView(); // Criando o objeto da tela de Login
-            LoginV.Show();// Exibe a tela criada
-            
-            //form.Close();// encerra a tela e ser for a única aberta encerra a aplicação.
 
+        void FazerLogOff( object disparador, EventArgs evento )
+        {
+            // ocultar a tela atual
+            form.Hide();
+
+            // Abrimos a tela de Login
+            LoginView loginV = new LoginView(); // criando o bjeto da tela de login
+            loginV.Show(); // exibe a tela criada 
+
+            //form.Close(); // encerra a tela e se for a única aberta encerra a aplicação
+        }
+        void CriaTela()
+        {
+            int posX = Convert.ToInt32(Config.tamanhoTela[0] * 0.3f);
+            int larg = Convert.ToInt32(Config.tamanhoTela[0] * 0.7f);
+
+            Panel tela = new Panel();
+            tela.Location = new Point( posX, 0 );
+            tela.Size = new Size(larg, Config.tamanhoTela[1]);
+            tela.Name = "tela";
+
+            form.Controls.Add(tela);
+        }
+
+        /// <summary>
+        /// Método que carrega as telas internas dentro do componente Panel nomeado como tela na PrincipalView.cs
+        /// </summary>
+        void CarregaTelas( object disparador, EventArgs evento)
+        {
+            // Criar um objeto (instanciar) - Tornar uma classe utilizavel 
+            // Tipos Básicos(variável/propriedade/atributo/parâmetros): int, string, bool, char,enum
+            UsuariosView telaUsuarios = new UsuariosView();//Objeto 
+
+            // Pegando o componente da tela
+            Panel tela = (Panel) form.Controls.Find("tela", true)[0];
+
+            // Definimos para que a janela não suba na hieraquia do win
+            telaUsuarios.TopLevel = false;
+
+            //Puxamos a nova tela para a frente(empilhamento)
+            tela.BringToFront();
+
+            // Carregando a tela no componente
+            tela.Controls.Add(telaUsuarios);
+
+            telaUsuarios.Show(); //Exibe a tela.    
+            
         }
 
     }

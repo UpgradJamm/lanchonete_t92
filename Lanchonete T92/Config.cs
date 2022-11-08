@@ -70,12 +70,12 @@ namespace Lanchonete_T92
         // armazena as imagens 
         private static string[,] imagens  = {
             { 
-                "login.png",
-                "logo.png", 
-                "fundo_form.png",
-                "sair.png",
-                "config.png",
-                "menu.png"
+                "login.png",    //0
+                "logo.png",     //1
+                "fundo_form.png",   //2
+                "sair.png", //3
+                "config.png",   //4
+                "menu.png"  //5
             }, 
             { 
                 "login_d.png", 
@@ -88,8 +88,15 @@ namespace Lanchonete_T92
         };
 
         // Credenciais do banco de dados
-        public static string servidorDB ="localhost";
-        public static string portaDB = "";
+        public static string servidorBD = "localhost";// nome ou IP
+        public static string portaBD = "3306"; // porta do servidor
+        public static string usuarioBD = "root"; 
+        public static string senhaBD = ""; 
+        public static string bancoBD = "lanchonete_t92"; 
+
+
+
+
         public static void MostraMensagem( string texto )
         {
             MessageBox.Show( texto );
@@ -122,7 +129,6 @@ namespace Lanchonete_T92
                 case "menu":
                     return caminhos = Path.Combine(caminho, "Imagens\\Icones\\" + imagens[tema, 5]);
                     break;
-
 
                 default: return caminhos = "";
             }

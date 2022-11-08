@@ -29,6 +29,7 @@ C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Ima
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\config.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\config_d.png
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\sair_d.png
+C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\Icones\menu.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form_d.png
@@ -53,11 +54,35 @@ C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\logo_d.p
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Lanchonete T92.exe.config
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Lanchonete T92.exe
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Lanchonete T92.pdb
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Google.Protobuf.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\MySql.Data.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Buffers.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Memory.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\ZstdNet.dll
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Google.Protobuf.pdb
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Google.Protobuf.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\MySql.Data.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Buffers.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Memory.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.AssemblyReference.cache
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete_T92.Properties.Resources.resources
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete_T92.LoginView.resources
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete_T92.PrincipalView.resources
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.GenerateResource.cache
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CopyComplete
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.exe
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete T92.pdb
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\obj\Debug\Lanchonete_T92.UsuariosView.resources
