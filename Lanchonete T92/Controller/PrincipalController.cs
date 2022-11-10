@@ -15,7 +15,6 @@ namespace Lanchonete_T92
         private Form form;
         private int largImagem;
 
-        
         // Construtor da classe que recebe a tela a ser editada e envia para a propriedade da tela
         public PrincipalController( Form form )
         {
@@ -23,9 +22,10 @@ namespace Lanchonete_T92
 
             FormataTela();
             CriaBotoes();
-            CriaTela();
             CriaPainelLateral();
             CriaLogo();
+            CriaTela();
+            
 
             // Listeners (ouvintes) dos botões da tela
             // O objeto deve ter um .Name para poder ser programado
@@ -37,6 +37,7 @@ namespace Lanchonete_T92
             // .MouseDown - mouse pressionado sobre o elemento
             form.Controls.Find("sairBtn", true)[0].Click += FazerLogOff;
             form.Controls.Find("menuBtn", true)[0].Click += CarregaTelas;
+            
 
         }
 
@@ -144,6 +145,7 @@ namespace Lanchonete_T92
 
             //form.Close(); // encerra a tela e se for a única aberta encerra a aplicação
         }
+
         void CriaTela()
         {
             int posX = Convert.ToInt32(Config.tamanhoTela[0] * 0.3f);
@@ -151,35 +153,36 @@ namespace Lanchonete_T92
 
             Panel tela = new Panel();
             tela.Location = new Point( posX, 0 );
-            tela.Size = new Size(larg, Config.tamanhoTela[1]);
+            tela.Size = new Size( larg, Config.tamanhoTela[1]);
             tela.Name = "tela";
+            tela.BackColor = Color.Transparent;
 
             form.Controls.Add(tela);
+
         }
 
         /// <summary>
         /// Método que carrega as telas internas dentro do componente Panel nomeado como tela na PrincipalView.cs
         /// </summary>
-        void CarregaTelas( object disparador, EventArgs evento)
+        void CarregaTelas( object disparador, EventArgs evento )
         {
-            // Criar um objeto (instanciar) - Tornar uma classe utilizavel 
-            // Tipos Básicos(variável/propriedade/atributo/parâmetros): int, string, bool, char,enum
-            UsuariosView telaUsuarios = new UsuariosView();//Objeto 
+            // criar um objeto (instanciar)
+            // Tipos Básicos(variável/propriedade/atributo/parâmetros): int, string, bool, char, enum, float, decimal
+             UsuariosView telaUsuarios = new UsuariosView();//objeto
 
             // Pegando o componente da tela
             Panel tela = (Panel) form.Controls.Find("tela", true)[0];
 
-            // Definimos para que a janela não suba na hieraquia do win
+            // definimos para que a janela não suba na hierarquia do Win
             telaUsuarios.TopLevel = false;
 
-            //Puxamos a nova tela para a frente(empilhamento)
+            //puxamos a nova tela para a frente(empilhamento)
             tela.BringToFront();
 
-            // Carregando a tela no componente
+            // carregando a tela no componente
             tela.Controls.Add(telaUsuarios);
 
-            telaUsuarios.Show(); //Exibe a tela.    
-            
+            telaUsuarios.Show(); //exibe a tela
         }
 
     }

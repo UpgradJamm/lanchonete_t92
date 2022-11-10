@@ -15,8 +15,13 @@ namespace Lanchonete_T92
         public UsuariosView()
         {
             InitializeComponent();
-            
-            UsuariosController usuariosC = new UsuariosController( this );
+
+            UsuariosController usuariosC = new UsuariosController(this);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

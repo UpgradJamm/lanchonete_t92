@@ -120,14 +120,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\UsuariosView.resx">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\PrincipalView.resx">
       <DependentUpon>PrincipalView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\UsuariosView.resx">
-      <DependentUpon>UsuariosView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Manrope-Light.ttf" />
     <None Include="Fonts\RobotoFlex-Regular.ttf" />

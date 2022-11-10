@@ -7,20 +7,25 @@ using System.Windows.Forms;
 
 namespace Lanchonete_T92
 {
-    class UsuariosController
+    class UsuariosController 
     {
-        // Criar atributos/propriedades
+        // criar atributos/propriedade
 
-        // Sempre que criar uma classe contruir o contrutor
-        public UsuariosController( Form form )
+        // criar o construtor da classe
+        public UsuariosController(Form form)
         {
-            // Instaciamos a classe de banco de dados
+            this.form = form;
+            
+            form.Controls.Find("cadastroBtn", true)[0].Click += ChamaCadastro;
+        }
+        void ChamaCadastro( object objeto, EventArgs evento)
+        {
+            string usuario = form.Controls.Find("usuarioTxt", true)[0].text;
+            string senha = form.Controls.Find("senhaTxt", true)[0].text;
+
             DB db = new DB();
 
-            // Chamamos a conexão com o banco
-            db.ConectaBanco();
-
-           
+            db.InsereDados("teste4@teste.com", "1234");
         }
     }
 }
