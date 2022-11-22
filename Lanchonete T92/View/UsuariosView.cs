@@ -18,10 +18,5 @@ namespace Lanchonete_T92
 
             UsuariosController usuariosC = new UsuariosController(this);
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

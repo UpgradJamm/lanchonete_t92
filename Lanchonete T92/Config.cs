@@ -58,6 +58,9 @@ namespace Lanchonete_T92
 
         public static string caminhos;
 
+        // chave de criptografia do banco de dados
+        public static string chaveCrypto = "$en@c2022";
+
         // ler o tamanho do monitor do usuário
         public static int[] tamanhoTela = { Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height };
 

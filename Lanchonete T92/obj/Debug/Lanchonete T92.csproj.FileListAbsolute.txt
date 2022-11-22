@@ -54,6 +54,8 @@ C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Sys
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete T92.csproj.CopyComplete
 C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\obj\Debug\Lanchonete_T92.UsuariosView.resources
+C:\Users\maycon.aguerra\source\repos\lanchonete_t92\Lanchonete T92\bin\Debug\Imagens\fundoUsuarios.png
+C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundoUsuarios.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_btns.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form.png
 C:\Users\guilherme.acreis\source\repos\Lanchonete T92\bin\Debug\Imagens\fundo_form_d.png
