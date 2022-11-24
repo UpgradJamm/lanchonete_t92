@@ -107,16 +107,42 @@ namespace Lanchonete_T92
             }
         }
 
-        public MySqlCommand CriptografaSenha( string senha )
+        MySqlDataReader RodaSQLBusca(string comandoSQL)
+        {
+            MySqlDataReader resultado = null;
+
+            try
+            {
+                // prepara o comando 
+                MySqlCommand roda = new MySqlCommand(comandoSQL, conn);
+
+                // executa o comando para Select e armazena em um Reader para que possamos ler o resultado da busca. E pegamos pelo nome da coluna do Banco resultado.GetString("coluna") ou pelo índice do vetor
+                resultado = roda.ExecuteReader();
+
+                conn.Close();
+
+                // retorna o resultado do comando
+                return resultado;
+            }
+            catch (Exception erro)
+            {
+                // retorna um objeto vazio em caso de erro
+                return resultado;
+
+            }
+        }
+
+        public MySqlDataReader CriptografaSenha( string senha )
         {
             // No MYSQL temos as criptografias abaixo:
             // AES_ENCRYPT( valor, chave ) / AES_DECRYTPT( valor, chave)
             // MD5( valor ) 
             string SQL = "SELECT( AES_ENCRYPT( '" + senha + "', '" + Config.chaveCrypto + "' ) )";
 
-            return RodaSQL( SQL );
+            return RodaSQLBusca( SQL );
 
         }
+
 
 
     }

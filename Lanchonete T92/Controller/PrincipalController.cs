@@ -14,7 +14,7 @@ namespace Lanchonete_T92
     {
         private Form form;
         private int largImagem;
-        private bool telaCarregada = false; // Não temos tela aberta
+        private bool telaCarregada = false;// não temos tela aberta
 
         // Construtor da classe que recebe a tela a ser editada e envia para a propriedade da tela
         public PrincipalController( Form form )
@@ -37,7 +37,7 @@ namespace Lanchonete_T92
             // .DoubleClick - clique duplo sobre o elemento
             // .MouseDown - mouse pressionado sobre o elemento
             form.Controls.Find("sairBtn", true)[0].Click += FazerLogOff;
-            form.Controls.Find("menuBtn", true)[0].Click += BloqueiaCarregamentoTela;// Chamando o método que checa se a tela já está aberta.
+            form.Controls.Find("menuBtn", true)[0].Click += BloqueiaCarregamentoTela;// chamando o método que checa se a tela já está aberta
             
 
         }
@@ -177,9 +177,12 @@ namespace Lanchonete_T92
             // definimos para que a janela não suba na hierarquia do Win
             telaUsuarios.TopLevel = false;
 
-            // Removendo as bordas
-            telaUsuarios.FormBorderStyle = FormBorderStyle.None; 
-            
+            // removendo as bordas
+            telaUsuarios.FormBorderStyle = FormBorderStyle.None;
+
+            // maximizando a tela carregada
+            telaUsuarios.WindowState = FormWindowState.Maximized;
+
             //puxamos a nova tela para a frente(empilhamento)
             tela.BringToFront();
 
@@ -189,16 +192,18 @@ namespace Lanchonete_T92
             telaUsuarios.Show(); //exibe a tela
         }
 
-        void BloqueiaCarregamentoTela(object disparador, EventArgs evento)
+        void BloqueiaCarregamentoTela( object disparador, EventArgs evento )
         {
-            // Se a tela não está aberta ( telaCarregada == null )
-            if ( telaCarregada == false )
+            // se a tela está fechada ( telaCarregada == false )
+            if( this.telaCarregada == false )
             {
-                // Abre a tela
+                // abre a tela
                 CarregaTelas();
                 // Altera a variável avisando que a tela está carregada
-                telaCarregada = true; 
+                telaCarregada = true;
+
             }
         }
+
     }
 }
